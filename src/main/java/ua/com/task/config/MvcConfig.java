@@ -16,7 +16,7 @@ public class MvcConfig implements WebMvcConfigurer {
     private String uploadPath;
 
     @Bean
-    public RestTemplate getRestTemplate(){
+    public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 
@@ -34,6 +34,6 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-    registry.addInterceptor(new RedirectInterceptor());
+        registry.addInterceptor(new RedirectInterceptor());
     }
 }
