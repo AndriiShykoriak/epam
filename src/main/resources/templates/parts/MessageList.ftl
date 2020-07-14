@@ -12,9 +12,9 @@
             <div class="card-footer text-muted">
                 <a href="/user-messages/${message.author.id}">${message.authorName}</a>
                 <#if message.author.id  == currentUserId>
-                <a class="btn btn-primary" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
-                    <a class="btn btn-primary"href="/delete/${message.id}">Delete</a>
-<#--                <#if !user??><a class="btn btn-primary"href="/share/${message.id}">Share</a><#else></#if>-->
+                    <a class="btn btn-primary" href="/user-messages/${message.author.id}?message=${message.id}">Edit</a>
+                    <a class="btn btn-primary" href="/delete/${message.id}">Delete</a>
+                <#--                <#if !user??><a class="btn btn-primary"href="/share/${message.id}">Share</a><#else></#if>-->
                 </#if>
                 <#--<#if message.author.id  != currentUserId ><a class="btn btn-primary" href="/user-messages/${user.id}">Share</a>
                 <#else>&lt;#&ndash;${message.authorName}&ndash;&gt;</#if>-->
